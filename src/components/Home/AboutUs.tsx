@@ -45,7 +45,9 @@ export const AboutUs = () => {
         />
       </div>
       <div className="w-1/3 flex flex-col items-start py-10">
-        <p className="text-lg font-sans font-bold mb-6">About us</p>
+        <p className="text-lg font-sans font-bold mb-6 text-blue-900">
+          About us
+        </p>
         <p className="font-extrabold text-3xl mb-4">
           Clean, Cruelty-Free, Dermatologist-Tested
         </p>

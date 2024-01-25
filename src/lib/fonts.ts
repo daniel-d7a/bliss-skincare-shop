@@ -8,6 +8,7 @@ import {
 
 export const inter = Inter({
   subsets: ["latin"],
+  weight: ["300", "400", "700"],
   variable: "--font-sans",
 });
 

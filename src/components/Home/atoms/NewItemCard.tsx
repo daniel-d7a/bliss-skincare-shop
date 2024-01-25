@@ -37,7 +37,12 @@ export const NewItemCard = ({
         height={380}
       />
       <div className="flex flex-col items-start justify-between pt-24 pl-8 w-1/2">
-        <p className={cn("text-[32px] font-bold w-2/3", serif.className)}>
+        <p
+          className={cn(
+            "text-[32px] text-blue-900 font-bold w-2/3",
+            serif.className
+          )}
+        >
           {title}
         </p>
         <p className={cn("text-base font-medium", noto.className)}>

@@ -13,6 +13,8 @@ import Link from "next/link";
 import { FaCartShopping } from "react-icons/fa6";
 import { IoPersonCircle } from "react-icons/io5";
 import React from "react";
+import { cn } from "@/lib/utils";
+import { poppins, serif } from "@/lib/fonts";
 
 type INavigationItemProps = {
   children: React.ReactNode;
@@ -21,11 +23,13 @@ type INavigationItemProps = {
 
 export const NavBar = () => {
   return (
-    <NavigationMenu className="w-full py-14 justify-between px-16">
+    <NavigationMenu
+      className={cn("w-full py-14 justify-between px-16", poppins.className)}
+    >
       <NavigationMenuList>
         <NavigationMenuItem>
           <Link href={"/"} legacyBehavior passHref>
-            <NavigationMenuLink className="text-4xl font-serif">
+            <NavigationMenuLink className={cn("text-4xl", serif.className)}>
               Bliss
             </NavigationMenuLink>
           </Link>
